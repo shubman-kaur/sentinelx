@@ -1,0 +1,12 @@
+Handbook
+PREFACE
+The Indian Computer Emergency Response Team (CERT-In)
+is a Government Organization under the Ministry of
+Electronics and Information Technology (MeitY), Government
+of India established with the objective of securing Indian
+cyber space. CERT-In provides Incident Prevention and
+Response services as well as Security Quality Management
+Services.
+CERT-In has been designated to serve as the national
+agency for incident response under Section 70B of the
+Information Technology Act, 2000 (Amendment 2008).

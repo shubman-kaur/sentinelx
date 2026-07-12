@@ -1,0 +1,14 @@
+media accounts
+like date of birth, first school name etc.
+23
+Cyber Dost – Awareness Document
+4.2.7. Don't use same password for all your online accounts. Imagine if
+one account gets compromised, the hacker can get access to your
+other accounts as well. A strong password & two factor
+authentication is a good practice and can help you in protecting
+your online accounts.
+4.2.8. As a best practice, while sending private and confidential
+information online, protect the document with a password and
+choose two communication channels. One for the document and
+other for the credentials/password to open the file.
+4.2.9.

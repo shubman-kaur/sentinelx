@@ -1,0 +1,19 @@
+Phishing links
+Modus Operandi
+➢ Fraudsters create a third-party phishing website which looks like an existing genuine
+website, such as - a bank’s website or an e-commerce website or a search engine,
+etc.
+➢ Links to these websites are circulated by fraudsters through Short Message Service
+(SMS) / social media / email / Instant Messenger, etc.
+➢ Many customers click on the link
+without checking the detailed Uniform
+Resource Locator (URL) and enter
+secure credentials such as Personal
+Identification Number (PIN), One Time
+Password (OTP), Password, etc., which
+are captured and used by the
+fraudsters.
+P recautions
+➢ Do not click on unknown / unverified links and immediately delete such SMS / email sent by
+unknown sender to avoid accessing them by mistake in future.
+➢ Unsubscribe the mails provi

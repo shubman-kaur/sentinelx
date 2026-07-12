@@ -1,0 +1,18 @@
+ATM card skimming
+Modus Operandi
+➢ Fraudsters install skimming devices in ATM machines and steal data from the
+customer’s card.
+➢ Fraudsters may also install a dummy keypad or a
+small / pinhole camera, well-hidden from plain sight to
+capture ATM PIN.
+➢ Sometimes, fraudsters pretending to be other
+customer standing near-by gain access to the PIN
+when the customer enters it in an ATM machine.
+➢ This data is then used to create a duplicate card and
+withdraw money from the customer’s account.
+Precautions
+➢ Always check that there is no extra device attached, near the card insertion slot or keypad of
+the ATM machine, before making a transaction.
+➢ Cover the keypad with your other hand while entering the PIN.
+➢ NEVER write the PIN on your ATM card.
+➢ Do NOT enter the PIN in the presence of any

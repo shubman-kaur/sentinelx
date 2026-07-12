@@ -1,0 +1,10 @@
+lways change the default admin password on your Wi-Fi router to a strong password known
+only to you. In addition, always configure your wireless network to use the latest encryption
+(contact your network service provider, in case of any doubt).
+7. Be cautions while browsing through a public Wi-Fi and avoid logging in to personal &
+professional accounts such as e-mail or banking on these networks.
+8. Always use virtual keyboard to access net-banking facility from public computers; and logout
+from banking portal/website after completion of online transaction. Also ensure to delete
+browsing history from web browser (Internet Explorer, Chrome, Firefox etc.) after completion
+of online banking activity.
+9. Do scan all e-mail attachments for viruses before opening them.

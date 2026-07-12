@@ -1,0 +1,17 @@
+d practice
+1.9 Public networks might not be secured. Avoid financial transactions on
+these networks. Alternatively, use personal mobile data or VPN (Virtual
+Private Network).
+8
+Cyber Dost – Awareness Document
+1.10 Check for HTTPs in URL:
+1.11 Monitor banking activities/transactions periodically
+9
+Cyber Dost – Awareness Document
+1.12 Keep bank’s customer care number handy.
+1.13 Security against fake banking E-mails.
+10
+Cyber Dost – Awareness Document
+1.14 Secure use of ATM
+1.15 Always remember to log off from website after completing an online
+transaction with your credit/ debit card.

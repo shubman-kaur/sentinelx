@@ -1,0 +1,13 @@
+You may press Shift and Delete button
+together to make it difficult to recover deleted files.
+4.1.4. Many mobile apps ask for many permissions to access data and
+functions regardless of the necessity for functioning of the app.
+Identify nature of app, assess the necessity of permissions asked while
+installing app and avoid giving unwanted permissions.
+4.1.5. Allowing apps to access various features of your electronic gadgets
+/Mobile phone may lead to security risks and expose your personal
+information for misuse. Be careful of the associated risks while
+granting access permissions.
+21
+Cyber Dost – Awareness Document
+4.1.6. Enable mobile device access to third-party applications selectively.

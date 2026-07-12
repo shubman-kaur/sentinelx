@@ -1,0 +1,17 @@
+, it is advisable to
+use some encryption software to encrypt messages before sending
+sensitive data. It can be decrypted only by the specified recipient.
+Source: www.infosecawareness.in
+4.2.20. Avoid using third-party extensions, plug-ins or add-ons for your web
+browser as it may secretly track your activity and steal your
+personal details.
+26
+Cyber Dost – Awareness Document
+5. Wireless / Bluetooth security awareness
+5.1. Secure all the wireless access points (Wi-Fi, Routers) with a strong
+password. Hackers usually scan for open access points, a method called
+as war-driving to anonymize their identity.
+5.2. Be cautious while browsing through a public Wi-Fi and avoid logging in
+to personal & professional accounts like e-mail, banking transactions
+on these networks.
+5.3.

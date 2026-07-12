@@ -1,0 +1,11 @@
+ormation is valid and funds are
+available on the customer’s credit card.
+➢ Card number: The number assigned by a credit card association or card issuing bank to
+a card. This information must be provided to a merchant by a customer in order to make
+a credit card payment but should not be shared with anyone else. The string of digits is
+printed on the card.
+➢ Credit card: A card that allows paying for products or services by availing
+unsecured/secured credit from a financial institution.
+➢ Credit limit: The term refers to the maximum amount of credit a financial institution
+extends to a customer. A lending institution extends a credit limit on a credit card based
+on the analysis of the information given by the credit-seeking applicant.

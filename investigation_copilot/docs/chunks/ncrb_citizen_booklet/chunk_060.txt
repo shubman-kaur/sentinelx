@@ -1,0 +1,24 @@
+n get
+access to your messages, OTP, camera, contacts, e-mails, photos etc. for malicious activities. It can
+also show obscene advertisements, sign users up for paid subscriptions or steal personal sensitive
+information from the mobile etc.
+35
+MOBILE APPLICATION
+FRAUDS
+Story 1: Cyber-Attacks using Infected Mobile Applications
+Samantha and Rohini
+are resident doctors who
+use a mobile application
+to scan medical reports.
+Samantha : This app
+enhances the quality of
+the photos and combines
+them in a single PDF file.
+Rohini : I can share
+the reports with senior
+doctors for their opinion.
+Samantha : But I read
+that this app is infected
+with malware. It shows
+intrusive ads and paid
+subscriptions.

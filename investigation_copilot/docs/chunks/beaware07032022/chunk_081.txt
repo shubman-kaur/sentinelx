@@ -1,0 +1,11 @@
+cation methodology, which
+the customer knows and is often used for carrying out online transactions. This is
+CONFIDENTIAL and should not be shared with anyone.
+➢ Phishing: It refers to spoofed emails and / or SMSs designed to dupe customers into
+thinking that the communication has originated from their bank / e-wallet provider and
+contain links to extract confidential details.
+➢ Point of Sale device (POS) / Acceptance Device (mPOS): It refers to any device /
+terminal / machine installed at Merchant Establishments which enables the merchants to
+accept payments through payment cards (credit cards, debit cards, gift cards etc.).
+➢ Quick Response (QR) code: The QR Code is type of a two-dimensional bar code. It
+consists of black squares arranged in a square grid on a white background.

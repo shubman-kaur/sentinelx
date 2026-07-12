@@ -1,0 +1,11 @@
+entralised Electronic Clearing
+Service (ECS) system operated by National Payments Corporation of India (NPCI).
+➢ Near Field Communication (NFC): It is a communication technology used to transmit
+data from a NFC equipped device to a capable terminal. The NFC technology is used to
+make a contactless payment that is carried out by keeping the smartphone/card near the
+NFC enabled machine.
+➢ National Electronic Fund Transfer (NEFT): It is a nation-wide centralised payment
+system owned and operated by RBI, which enables bank customers in India to transfer
+funds between any two NEFT-enabled bank accounts.
+➢ OTP: One Time Password is one of the factors in the authentication methodology, which
+the customer knows and is often used for carrying out online transactions.

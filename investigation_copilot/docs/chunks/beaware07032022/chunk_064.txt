@@ -1,0 +1,19 @@
+ate the same only when the card usage is required.
+➢ Similarly, Near Field Communication (NFC) feature should be deactivated, if the card
+is not to be used.
+➢ Before entering PIN at any Point of Sale (POS) site or while using the card at an NFC
+reader, you must carefully check the amount displayed on the POS machine screen
+and NFC reader.
+27
+Office of RBI Ombudsman
+https://cms.rbi.org.in/
+➢ Never let the merchant take the card away from your sight for swiping while making a
+transaction.
+➢ Cover the keypad with your other hand while entering the PIN at a POS site / ATM.
+For E-mail account security
+➢ Do not click on links sent through emails
+from unknown addresses / names.
+➢ Avoid opening emails on public or free
+networks.
+➢ Do not store secure credentials / bank
+passwords, etc., in emails.

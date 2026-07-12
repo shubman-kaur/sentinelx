@@ -1,0 +1,15 @@
+unt do not select common
+secret questions (for password recovery option) that can be guessed
+easily. Nefarious users can guess straightforward answers via
+recovery options and may hack your account.
+4.2.13. Just like you lock your house, your car, your bike; you must protect
+your online assets (e-banking, wallet, email, social media accounts)
+& devices (like phones, laptops, tablets) with strong passwords and
+PINs & change them regularly.
+4.2.14. Be careful when you are using computer in a cybercafé. Use
+computer only if an anti-virus is installed in the system. Do not save
+your password when prompted by the browser. Always log out of
+your accounts and close the browser.
+25
+Cyber Dost – Awareness Document
+4.2.15.

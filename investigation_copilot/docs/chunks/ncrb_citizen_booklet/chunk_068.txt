@@ -1,0 +1,29 @@
+Once the account is hacked, the attacker can steal money or perform
+an illegal transaction in order to defame or frame the victim.
+Hacking of Multiple Accounts due to same password
+If same password is used for multiple accounts, then hacking of one account may also lead to
+hacking of other accounts.
+39
+ONLINE BANKING
+FRAUDS
+Story 1: Digital Payments Applications Related Attacks
+John and Sahil always
+use digital payments
+applications in their
+day-to-day lives for
+convenience.
+They pay house bills,
+grocery expenses and
+any other expenditure
+using digital payments
+applications.
+They read news on TV
+that the server of the
+payment applications is
+hacked.
+Multiple accounts are
+affected and many
+users face financial loss
+due to this.
+40
+• Never share your mobile unlocking PIN or passwords with a

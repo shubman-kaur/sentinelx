@@ -1,0 +1,10 @@
+s management, service delivery etc.
+As a result, these applications are more prone to cyber-attacks. Users need to be aware of such
+attacks on commonly used mobile applications such as digital payment applications and gaming
+applications.
+Let us look at some day to day example on how mobile applications can be used for cyber frauds.
+Cyber-attacks using Infected Mobile Applications
+People become habitual users of certain mobile applications. As a result, they ignore security
+warnings. Fraudsters use this to attack the victim by infiltrating through such popular mobile
+applications. They infect the applications with malicious software, called Trojan. This Trojan can get
+access to your messages, OTP, camera, contacts, e-mails, photos etc. for malicious activities.

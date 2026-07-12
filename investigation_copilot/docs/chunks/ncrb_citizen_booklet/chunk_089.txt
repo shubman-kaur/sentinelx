@@ -1,0 +1,12 @@
+U SAFE
+1. Always keep your systems/devices (desktop, laptop, mobile) updated with latest patches.
+2. Protect systems/devices through security software such as anti-virus with the latest version.
+3. Always download software or applications from known trusted sources only. Never use pirated
+software on your systems/devices.
+4. Ensure all devices/accounts are protected by a strong PIN or passcode. Never share your PIN
+or password with anyone.
+5. Do not share your net-banking password, One Time Password (OTP), ATM or phone
+banking PIN, CVV number etc. with any person even if he/she claims to be an employee or a
+representative of the bank and report such instances to your bank.
+6. Always change the default admin password on your Wi-Fi router to a strong password known
+only to you.

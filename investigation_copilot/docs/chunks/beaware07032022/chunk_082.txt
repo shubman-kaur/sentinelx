@@ -1,0 +1,12 @@
+-dimensional bar code. It
+consists of black squares arranged in a square grid on a white background. Imaging
+devices such as smartphone cameras can be used to read and interpret these codes. QR
+code contains information about the payee and is used to facilitate mobile payments at the
+point-of-sale by debiting the customers’ account.
+➢ Remote Access: It refers to luring customer to download an application on their mobile
+phone / computer which is able to access all the customers’ data on that customer device.
+34
+Office of RBI Ombudsman
+https://cms.rbi.org.in/
+➢ UPI: Unified Payment Interface is a platform that allows transfer of money from one bank
+/ wallet account to other using a mobile phone which has access to the Internet.

@@ -1,0 +1,29 @@
+COMPUTER
+Story 1: Virus Attack through external devices
+I need to take print out
+of a few documents. Let
+me put the documents in
+a USB drive and go to a
+cybercafé.
+Ramesh goes to a
+cybercafé to take print
+out of his documents.
+Ramesh plugs in the
+USB drive and takes the
+print out. He is unaware
+that the computer in
+cybercafé is infected with
+virus.
+As a result, the USB
+drive too is now infected
+with virus.
+48
+Ramesh goes back
+home.
+Oh! I need to take more
+print outs, let me put
+more documents in the
+USB drive.
+Ramesh connects
+USB drive to his
+computer.

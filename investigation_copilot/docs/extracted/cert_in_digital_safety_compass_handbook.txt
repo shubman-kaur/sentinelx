@@ -1,0 +1,537 @@
+DIGITAL SAFETY
+COMPASS
+HANDBOOK
+For Digital Nagriks & Digital
+Enterprises
+By
+Indian Computer Emergency
+Response Team
+[CERT-In]
+On the occasion of
+Safer Internet Day
+11th Feb 2025
+Security is
+our first
+priority
+Table of Contents
+Preface 03
+CCCEEERRRTTT---IIInnn’’’sss
+Phishing Website Scams 04
+Digital Safety
+Digital Arrest 05
+Compass
+Package Fraud 06
+Handbook
+Cash-on-Delivery (CoD) Scams 07
+Banking App Frauds 08
+Phone Scams 09
+Fake Job Proposals 10
+Emotional Manipulation 11
+Lottery and Prize Frauds 12
+Fake Technical Assistance 13
+Online Payment Scams 14
+Fake Charity Appeal 15
+Fraudulent Loan App Scam 16
+Fake Trading Apps 17
+Awareness Materials 18
+Contact Us 19
+CERT-In’s Digital Safety
+Compass Handbook
+PREFACE
+The Indian Computer Emergency Response Team (CERT-In)
+is a Government Organization under the Ministry of
+Electronics and Information Technology (MeitY), Government
+of India established with the objective of securing Indian
+cyber space. CERT-In provides Incident Prevention and
+Response services as well as Security Quality Management
+Services.
+CERT-In has been designated to serve as the national
+agency for incident response under Section 70B of the
+Information Technology Act, 2000 (Amendment 2008). As
+part of services of CERT-In, for the creation of awareness in
+the area of cybersecurity as well as training/upgrading the
+technical know-how of various stakeholders, CERT-In is
+observing the Safer Internet Day on 11th February, 2025.
+This Digital Safety Compass Handbook for Digital Nagriks
+and Digital Enterprises is released as a part of CERT-In's
+awareness initiatives to educate the users on the best
+practices that need to be followed for using the internet in a
+safe and secure manner.
+Enhancing
+Cyber Security
+in India
+03
+CERT-In’s Digital Safety
+Compass Handbook
+PHISHING
+WEBSITE SCAMS
+Scammers create fake websites and steal personal information such
+as banking details, card details, personal information.
+How Attacks Work
+Scammer sends Email arrives in
+Victim click on
+fake email. inbox with a link .
+the link.
+Fake website asks Victim's enters Unauthorized access
+sensitive information. the information. and data misuse.
+Safety Practices
+Be cautious while clicking on links &
+attachments in emails received from
+strangers.
+Never share sensitive details like Don't bite
+passwords or PINs via email or text.
+the
+Watch for poor grammar or spelling
+phishing
+mistakes, which can be signs of phishing.
+Use unique, complex passwords for each bait
+account.
+Expand and verify shortened URLs before
+04
+clicking on them.
+CERT-In’s Digital Safety
+Compass Handbook
+DIGITAL
+ARREST
+Victims get messages/calls claiming that they're under
+investigation for doing illegal activities.
+Initial Contact
+Scammers impersonate authorities by sending urgent messages
+about legal actions via texts, calls, and social media apps.
+The Accusation
+Targets are falsely accused of carrying out illegal activity, and
+they are threatened using legal jargon and fake case numbers.
+Scare Tactics and Urgency
+Scammers pressure victims to act fast by threatening arrest or
+fines. If questioned, they behave aggressive and make harsher
+threats to scare the victim into complying.
+S
+A
+F
+E
+G
+U
+A Beware of fake Legitimate law Government agencies
+official calls. Stay enforcement never asks do not use WhatsApp
+R
+calm, don't panic. for payment details. and Skype for official
+D
+communication. 05
+S
+CERT-In’s Digital Safety
+Compass Handbook
+Package
+D
+Fraud
+SEIZE
+D
+E
+Z
+I
+E
+SEIZED S
+Scammers claim your package
+was seized for illegal items like
+drugs or prohibited items. Ignore
+such calls, emails, or messages.
+Scammers They tell The call is Victims are
+passed to fake
+pretend to be victims that threatened to
+Law
+delivery their package pay money to
+enforcement
+workers/ has illegal avoid arrest
+officers to
+Customer care items and and
+create a fake
+executives to make them threat. reputational
+trick people. scared. damage.
+Safety Practices
+Beware of unsolicited calls or messages.
+Verify claims with official sources.
+Do not transfer money under pressure
+Never share sensitive personal information.
+Resist threats and urgency tactics.
+06
+CERT-In’s Digital Safety
+Compass Handbook
+CASH-ON-DELIVERY
+(COD) SCAMS
+Scammers send They may send Restrictions on
+fake or low-quality random packages, checking parcels
+products after expecting you to pay beforehand help
+collecting cash. without questioning. scammers deceive
+buyers.
+Stay alert, stay safe!
+Research sellers and their reviews
+before buying. Use trusted websites
+to avoid fake sellers.
+Stay aware of what you’ve ordered. If
+a package arrives unexpectedly,
+don’t accept it.
+If you didn’t order it, say no! Don’t feel
+pressurized to pay.
+check for secure online payment
+options with buyer protection .
+07
+CERT-In’s Digital Safety
+Compass Handbook
+BANKING APP
+FRAUDS
+Scammers trick users into installing fake banking apps to steal
+credentials and empty their accounts.
+Victims receive The app
+an SMS or mimics a bank
+WhatsApp login to steal
+message about credentials and
+a security issue. OTPs.
+A fake banking Attackers
+app (.apk file) intercept OTPs
+is sent for to access and
+installation. drain bank
+accounts.
+Protect Yourself
+Avoid downloading
+Banks never ask to Never share otp,
+apps from unknown
+download any apk banking
+sources and third
+file/app through social credentials with
+party platforms.
+media platforms. anyone.
+08
+CERT-In’s Digital Safety
+Compass Handbook
+PHONE SCAMS
+Victims receive calls claiming to be from
+telecom regulators/banks/service
+providers stating there’s an issue with
+their service and scammers ask to install
+app or click links for remote access.
+Tries to steal your personal or
+financial details by asking directly.
+Tricks you into downloading
+harmful software or giving remote
+access to your device.
+Falsely claims your bank or online
+accounts are hacked to make you
+panic.
+PAUSE AND THINK
+the caller is likely to
+Stay Alert, Stay Secure be a scam
+Never share If in doubt, contact
+personal, financial, or the organization
+Unknown
+login details over the directly using official
+phone. channels.
+Block scam numbers
+immediately to
+prevent repeat calls
+and stay safe.
+09
+CERT-In’s Digital Safety
+Compass Handbook
+FAKE
+JOB Scammers promise
+fake high-paying jobs
+PROPOSALS
+with little effort,
+aiming to steal your
+Red Flags in Job Offers money and identity.
+Unexpected contact from a
+recruiter via text or encrypted
+platforms.
+Promises of high income with
+minimal effort from home.
+Rapid hiring with no interviews
+or qualifications discussed.
+Asked to pay a fee or top up
+an account to start tasks.
+Tasks involve money transfers,
+purchases, or package
+handling.
+Safety Practices
+Verify job offers carefully, even
+on trusted platforms.
+Genuine employers don't ask
+for upfront payments or fees.
+Avoid sharing personal or
+banking details with unverified
+recruiters.
+Be cautious of pressure tactics
+10
+and rushed offers.
+CERT-In’s Digital Safety
+Compass Handbook
+EMOTIONAL
+MANIPULATION
+Emotional manipulation scams use fake profiles to exploit victims for
+money.
+Authority & Trust
+Attackers impersonate trusted
+figures to manipulate victims.
+Confusion & Fear & Intimidation
+Complexity Threats of legal
+Scammers create action or account
+fake emergencies to suspension pressure
+rush decisions. victims to act quickly.
+Urgency & Scarcity Hope & Excitement
+Attackers use urgent offers Scammers lure victims
+or emergencies to pressure with fake rewards, job
+quick decisions. offers, or emotional bonds.
+BE CAUTIOUS
+Avoid sharing personal details with
+unfamiliar individuals.
+Remain cautious regarding
+unsolicited messages.
+Conduct thorough research prior to
+committing to any financial
+decisions.
+Always inquire for clarification when
+11
+uncertain.
+CERT-In’s Digital Safety
+Compass Handbook
+LOTTERY AND PRIZE
+FRAUDS
+Some scammers might try to
+trick you by claiming you've won
+a contest in order to steal your
+money or personal information.
+They often request advance
+payments for things like fees or
+taxes to supposedly release your
+prize.
+Victims, hoping to receive
+something special, may send
+money or share their information,
+only to find that no prize ever
+arrives, exposing the scam for
+what it is.
+Be Alert
+Avoid clicking on
+shortened links.
+Stick to websites starting
+with https://.
+Always verify authenticity
+before responding.
+Never pay an advance fee to claim
+12
+competition prizes.
+CERT-In’s Digital Safety
+Compass Handbook
+FAKE
+TECHNICAL
+ASSISTANCE
+Beware of calls, emails, or pop-ups claiming your computer has
+issues. Scammers often pose as trusted companies to create fear.
+Scammer’s Tactics
+Useful Techniques
+Request remote
+Hang up if someone claims
+access.
+your computer has a
+problem; scammers often
+Enrolls in Fake use fake caller IDs.
+Programs. Avoid calling numbers or
+clicking links in pop-ups
+warning of system issues.
+Install malware for
+password access. Contact your security
+software provider directly
+using official contact
+Demand credit
+details.
+card info for scams.
+Seek help only from
+verified cybersecurity
+Try to sell worthless
+professionals.
+service/software.
+Never share passwords or
+grant remote access to
+Direct to fake unverified contacts.
+websites for
+sensitive info.
+13
+CERT-In’s Digital Safety
+Compass Handbook
+ONLINE PAYMENT
+SCAMS
+Has a stranger ‘accidentally’ sent you money on a payment app?
+Beware — it might be an online payment app scam.
+Ways used by Scammers
+Impersonation E-Commerce Customer support
+Lottery or jackpot Lucrative investments
+Safety Practices
+Verify urgent payment requests through direct
+communication or unique personal questions.
+You don't need a UPI PIN or OTP to receive
+money.
+Be cautious of offers that seem too good to be
+true.
+Monitor financial statements regularly for
+14
+unauthorized activity.
+CERT-In’s Digital Safety
+Compass Handbook
+FAKE CHARITY APPEAL
+Charity scammers pretend to be from real charities and
+contact people by phone, email, social media, or in
+person. They create fake websites and materials to look
+trustworthy.
+Do’s Dont’s
+Ask questions about the Don’t send cash or gift
+charity’s mission and cards.
+spending. Don’t trust links from
+Donate securely through random emails or
+official platforms. messages.
+Most legitimate charity Don’t share personal
+organisation websites or financial details
+use .org rather than with strangers.
+.com. Don’t rush into
+Be cautious of urgent or donating without
+emotional appeals. proper verification.
+15
+CERT-In’s Digital Safety
+Compass Handbook
+FRAUDULENT LOAN
+APP SCAM
+Fake loan app scams target individuals in financial need and distress.
+Scammers pose as legitimate lenders, offering quick loans with little or
+no paperwork.
+Scammers target
+Victims are lured into
+vulnerable people via fake
+high-interest loans,
+websites, ads, or emails.
+making repayment
+nearly impossible.
+Once victims show interest,
+fraudsters ask for advance
+Scammers extort money
+fees, or bank access and
+by manipulating photos
+makes the victim to install
+and threatening victims.
+malicious apps.
+Safety Practices
+Legitimate lenders don’t request upfront fees. Avoid those demanding
+payment before loan disbursement.
+Be cautious of unsolicited loan offers promising guaranteed approval
+without credit checks.
+Carefully scrutinize interest rates and terms; if they seem too good to
+be true, they likely are.
+Make sure the app has a Reserve Bank of India's (RBI's)
+mobile-only Non-Banking Financial Company (NBFC) license to
+16
+give loans.
+CERT-In’s Digital Safety
+Compass Handbook
+FAKE TRADING
+APPS
+The fraudulent trading app scam involves
+creating deceptive apps to trick investors,
+promising high returns with low risk to lure you
+into investing.
+Safety Tactics
+Ensure your broker is SEBI-
+registered. Verify on SEBI’s
+After gaining
+official website.
+Scammers try
+trust, scammers
+Use the official app or
+to contact
+offer a fake
+website of a registered
+victims
+trading app as a
+broker for fund transfers.
+through social
+profitable
+media and Some influencers may
+investment.
+establish trust. promote fake investments.
+Research before trusting
+their advice.
+Avoid transferring money to
+personal accounts; always
+use the official app or
+The app falsely Scammers
+website of a registered
+shows rising impose hidden
+broker.
+investments, fees when
+misleading victims withdraw
+victims into
+funds, hindering
+investing more.
+their recovery
+17
+efforts.
+CERT-In’s Digital Safety
+Compass Handbook
+AWARENESS MATERIALS
+Guidelines on Information Security Practices for
+Government Entities:
+https://www.cert-in.org.in/PDF/guidelinesgovtentities.pdf
+Guidelines for Secure Application Design, Development,
+Implementation & Operations:
+https://www.cert-in.org.in/PDF/
+Application_Security_Guidelines.pdf
+Technical Guidelines on SOFTWARE BILL OF MATERIALS
+(SBOM):
+https://www.cert-in.org.in/PDF/SBOM_Guidelines.pdf
+Awareness Booklets:
+https://www.cert-in.org.in/AwarenessBooklets.jsp
+Check CERT-In's latest Check CERT-In's latest
+advisories at: vulnerabilities notes at:
+https://www.cert- https://www.cert-
+in.org.in/s2cMainServlet? in.org.in/s2cMainServle
+pageid=PUBADVLIST t?pageid=VLNLIST
+csk@cert-in.org.in
+Announcements Security Tools
+https://www.csk.gov.in/announcements/index.html https://www.csk.gov.in/security-tools.html
+18
+CERT-In’s Digital Safety
+Compass Handbook
+FOR REPORTING CYBER FOR QUERIES RELATED TO
+SECURITY INCIDENTS TO 24/7 BOTNET CLEANING
+INCIDENT RESPONSE HELP INITIATIVE
+DESK
+csk@cert-in.org.in
+incident@cert-in.org.in
+CERT-IN FOR INDUSTRY &
+INFORMATION DESK ACADEMIA
+COLLABORATION
+info@cert-in.org.in
+subscribe@cert-in.org.in
+collaboration@cert-in.org.in
+advisory@cert-in.org.in
+FOR REPORTING CYBER
+FOR TRAININGS/
+SECURITY VULNERABILITIES
+AWARENESS PROGRAMMES
+vdisclose@cert-in.org.in
+training@cert-in.org.in
+Indian Computer Emergency Response Team
+FOLLOW US ON
+Government of India, Ministry of Electronics and
+Information Technology,
+Electronics Niketan, 6, CGO Complex, Lodhi Road,
+@IndianCERT @cert_india
+New Delhi-110003
+24X7 Incident Response Help Desk
++91-11-24368572 For Reporting Cyber Fraud &
+Crime to I4C:
+Toll Free Phone: +91-1800-11-4949
+https://www.cybercrime.gov.in/
+Toll Free Fax: +91-1800-11-6969
+or call 1930
+Training/Awareness
+Tel: +91-11-22902600 Ext: 1012 https://www.cert-in.org.in https://www.csk.gov.in
+Information Desk
+Phone: +91-11-24368551
+19
+Fax: +91-11-24368546

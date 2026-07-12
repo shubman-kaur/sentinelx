@@ -1,0 +1,9 @@
+information (name, Aadhaar details, bank account details etc.) or harm the victim
+in any other way. The entire basis of this kind of attack is to make the victim fall into their trap by
+sending fake e-mails, calls or SMSs.
+Phishing is the act of sending fraudulent e-mail that appears to be from a legitimate source, for
+example, a bank, a recruiter or a credit card company etc. This is done in an attempt to gain
+sensitive personal information, bank account details etc. from the victim.
+Vishing is similar to phishing. But, instead of e-mail, in this type of crime, the fraudster uses
+telephone to obtain sensitive personal and financial information.
+Smishing is the SMS equivalent of phishing. It uses SMS to send fraudulent text messages.

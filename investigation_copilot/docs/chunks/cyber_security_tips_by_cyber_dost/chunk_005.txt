@@ -1,0 +1,13 @@
+share your Net Banking password, One Time Password (OTP),
+ATM or phone banking PIN, CVV number etc. to any person even, if he
+is claiming to be employee or representative of bank and report such
+instances to your bank.
+1.4 Beware of KYC/Remote App Frauds
+6
+Cyber Dost – Awareness Document
+1.5 Enhance your protection by deploying additional layer of security to
+access your online accounts or doing online financial transactions by
+enabling two factor authentication (2FA) - username with password and
+OTP on your mobile
+1.6 Do not respond to any message assuring credit of money into your bank
+account with request to share personal details.

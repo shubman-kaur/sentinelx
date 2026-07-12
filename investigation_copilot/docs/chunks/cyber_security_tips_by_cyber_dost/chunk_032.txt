@@ -1,0 +1,14 @@
+ing in
+to personal & professional accounts like e-mail, banking transactions
+on these networks.
+5.3. Be careful while using public Wi-Fi at Airports, Railway Stations, Bus
+Stops etc. Public Wi-Fi is an easy target for any hacker to steal your
+information. Use secure VPN or proxy to avoid unauthorised access to
+your personal information.
+5.4. Consider using the Media Access Control, or "MAC," address filter in
+your wireless router. Every electronic device that can connect to a Wi-
+Fi network has a unique ID called the "physical address" or "MAC"
+address. Wireless router can screen the MAC addresses of all devices
+connected to it, and users can set their wireless network to accept
+connections only from devices with MAC addresses recognized by
+router.

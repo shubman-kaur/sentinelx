@@ -1,0 +1,15 @@
+rally contain malware. So be aware of such online
+free offers.
+31
+Cyber Dost – Awareness Document
+7. Phishing & Spamming
+7.1 Heard a lot about Phishing, but how to identify it? Hackers generally
+use link manipulation as a method to create illegitimate URLs. E.g.
+For a legitimate link like yourbank.com, a phished link would look
+like y0urbnk.com
+7.2 Avoid downloading email attachments or clicking on suspicious links
+received in emails from unknown or untrusted sources.
+7.3 Don't click on the links provided in suspicious emails even if they
+look genuine as this may lead you to malicious websites and this may
+be an attempt to defraud your hard earned money.
+7.4 Always be careful when clicking on links or downloading.

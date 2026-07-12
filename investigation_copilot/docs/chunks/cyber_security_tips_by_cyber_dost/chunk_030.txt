@@ -1,0 +1,14 @@
+ne. Make
+sure you delete the data inside the drive before you dispose or sent
+it for repair.
+4.2.17. Have an awareness about privacy policy (like what information is
+getting collected from you, purpose of collection, security of that
+collected information, circulation of the collected information if any
+etc.) about the website you visit frequently.
+4.2.18. Review your access to the third-party application via social
+networking sites and selectively enable or disable as per your usage.
+As a good practice maintain separate professional and personal
+email accounts with unique but strong passwords.
+4.2.19. As e-mail messages are transferred in clear text, it is advisable to
+use some encryption software to encrypt messages before sending
+sensitive data.

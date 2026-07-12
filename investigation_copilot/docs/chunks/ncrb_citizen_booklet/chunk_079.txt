@@ -1,0 +1,10 @@
+tos, music, movies etc. in the computer. Therefore, protection of all this
+data is highly essential. Just as we keep a physical lock on our safe vaults, it is equally important to
+protect our valuable data from viruses/malicious applications that can damage it.
+Let us look at some examples on how our personal computer can get affected by virus.
+Virus Attack through external devices
+A virus can enter the computer through external devices like pen drive or hard disk etc. This virus
+can spread across all the computer files.
+Virus Attack by downloading files from un-trusted websites
+The virus can enter the computer by download of files from un-trusted websites. The virus can be
+hidden in the form of music files, video files or any attractive advertisement.

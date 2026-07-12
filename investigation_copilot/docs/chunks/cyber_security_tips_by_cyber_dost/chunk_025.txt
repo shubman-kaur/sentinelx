@@ -1,0 +1,15 @@
+aptop etc.? Do ensure that all the device data is securely erased
+before your handover it to vendor. This is important to avoid
+possible leakage of your personal information
+4.2.4. Protecting your email & social media accounts is important as any
+breach can result in loss of personal data. Always use two factor
+authentication features (password & verification code on your
+registered mobile) to secure your email/social media accounts.
+4.2.5. When accessing online accounts via public computers ensure that
+remember me / save password is not selected when prompted.
+4.2.6. In the password recovery settings do not set the questions which
+can be easily answered or identified from your social media accounts
+like date of birth, first school name etc.
+23
+Cyber Dost – Awareness Document
+4.2.7.

@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SentinelX — Digital Public Safety Intelligence</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+  :root {
+    --bg: #0A0A0A;
+    --bg-2: #101010;
+    --panel: #141414;
+    --panel-2: #1A1A1A;
+    --border: #2A2A2A;
+    --border-soft: #202020;
+    --text: #EDEDED;
+    --text-dim: #7A7A7A;
+    --text-mid: #A5A5A5;
+    --signal: #C9A24B;
+    --signal-dim: rgba(201, 162, 75, 0.12);
+    --low: #4ADE80;
+    --medium: #FFB454;
+    --high: #FF8A3D;
+    --critical: #FF4D5E;
+    --font-display: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background:
+      radial-gradient(ellipse 900px 500px at 15% -5%, rgba(201,162,75,0.05), transparent),
+      var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    min-height: 100vh;
+    display: flex;
+  }
+
+  /* ambient scanline texture */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 999;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.012) 0px,
+      rgba(255,255,255,0.012) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+    opacity: 0.5;
+  }
+
+  /* ---------- Sidebar ---------- */
+  .sidebar {
+    width: 240px;
+    flex-shrink: 0;
+    background: var(--bg-2);
+    border-right: 1px solid var(--border-soft);
+    padding: 26px 18px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 6px 22px;
+    border-bottom: 1px solid var(--border-soft);
+    margin-bottom: 18px;
+  }
+
+  .brand-mark {
+    width: 30px; height: 30px;
+    border-radius: 7px;
+    background: linear-gradient(145deg, #2A2013, #14100A);
+    border: 1px solid rgba(201,162,75,0.35);
+    display: flex; align-items: center; justify-content: center;
+    position: relative;
+  }
+  .brand-mark::after {
+    content: '';
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--signal);
+    box-shadow: 0 0 10px var(--signal), 0 0 20px rgba(201,162,75,0.5);
+  }
+
+  .brand-name {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+  }
+  .brand-sub {
+    font-family: var(--font-mono);
+    font-size: 9.5px;
+    color: var(--text-dim);
+    letter-spacing: 0.3px;
+    margin-top: 1px;
+  }
+
+  nav { display: flex; flex-direction: column; gap: 2px; }
+
+  .nav-item {
+    display: flex; align-items: center; gap: 10px;
+    padding: 10px 12px;
+    border-radius: 7px;
+    color: var(--text-mid);
+    text-decoration: none;
+    font-size: 13.5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+    border: 1px solid transparent;
+  }
+  .nav-item:hover { background: var(--panel-2); color: var(--text); }
+  .nav-item.active {
+    background: var(--signal-dim);
+    color: var(--signal);
+    border-color: rgba(201,162,75,0.25);
+  }
+  .nav-icon { width: 15px; text-align: center; font-size: 13px; }
+
+  .sidebar-foot {
+    margin-top: auto;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-soft);
+  }
+  .status-pill {
+    display: flex; align-items: center; gap: 7px;
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    color: var(--text-dim);
+    padding: 8px 10px;
+    background: var(--panel-2);
+    border-radius: 7px;
+    border: 1px solid var(--border-soft);
+  }
+  .status-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--text-dim);
+    flex-shrink: 0;
+  }
+  .status-dot.up { background: var(--low); box-shadow: 0 0 6px var(--low); }
+  .status-dot.down { background: var(--critical); box-shadow: 0 0 6px var(--critical); }
+
+  /* ---------- Main ---------- */
+  .main {
+    flex: 1;
+    padding: 30px 40px 90px;
+    max-width: 1180px;
+  }
+
+  .topbar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .page-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 29px;
+    letter-spacing: 0.2px;
+  }
+  .page-sub {
+    color: var(--text-dim);
+    font-size: 13.5px;
+    margin-top: 4px;
+  }
+  .clock {
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    color: var(--text-dim);
+    text-align: right;
+    line-height: 1.5;
+  }
+  .clock strong { color: var(--text-mid); }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 12.5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--signal);
+    margin: 34px 0 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .eyebrow::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+  .eyebrow.first { margin-top: 0; }
+
+  .panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 22px;
+  }
+
+  /* ---------- Stat strip ---------- */
+  .stat-strip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+  }
+  @media (max-width: 900px) { .stat-strip { grid-template-columns: repeat(2, 1fr); } }
+
+  .stat-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 18px;
+  }
+  .stat-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 10px;
+  }
+  .stat-value {
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .stat-note { font-size: 11.5px; color: var(--text-dim); margin-top: 4px; }
+  .stat-note.good { color: var(--low); }
+  .stat-note.warn { color: var(--high); }
+
+  /* ---------- Submit panel ---------- */
+  textarea {
+    width: 100%;
+    background: var(--panel-2);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 8px;
+    padding: 14px;
+    font-family: var(--font-body);
+    font-size: 14px;
+    min-height: 100px;
+    resize: vertical;
+  }
+  textarea:focus, input:focus-visible, button:focus-visible { outline: 2px solid var(--signal); outline-offset: 1px; }
+
+  .row { display: flex; gap: 14px; margin-top: 14px; flex-wrap: wrap; align-items: center; }
+
+  .file-btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--panel-2);
+    border: 1px dashed var(--border);
+    color: var(--text-dim);
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 12.5px;
+    cursor: pointer;
+    font-family: var(--font-mono);
+  }
+  .file-btn:hover { border-color: var(--signal); color: var(--text); }
+  input[type="file"] { display: none; }
+
+  .submit-btn {
+    margin-left: auto;
+    background: var(--signal);
+    color: #06140E;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 26px;
+    font-weight: 700;
+    font-family: var(--font-display);
+    letter-spacing: 0.4px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.2s ease;
+  }
+  .submit-btn:hover { box-shadow: 0 0 20px rgba(201,162,75,0.35); }
+  .submit-btn:active { transform: scale(0.97); }
+  .submit-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  .filename-tag { font-family: var(--font-mono); font-size: 12px; color: var(--signal); }
+
+  .loading {
+    display: none;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    color: var(--signal);
+    margin-top: 16px;
+  }
+  .spinner {
+    width: 13px; height: 13px;
+    border: 2px solid var(--border);
+    border-top-color: var(--signal);
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .error-box {
+    display: none;
+    margin-top: 16px;
+    background: rgba(240,69,79,0.08);
+    border: 1px solid rgba(240,69,79,0.35);
+    color: #F5A0A5;
+    padding: 13px 16px;
+    border-radius: 8px;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    line-height: 1.6;
+  }
+
+  /* ---------- Results ---------- */
+  #results { display: none; }
+
+  .case-stamp {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--text-dim);
+    padding-bottom: 14px;
+    margin-bottom: 18px;
+    border-bottom: 1px dashed var(--border);
+  }
+  .case-stamp b { color: var(--signal); letter-spacing: 0.5px; }
+
+  .score-section {
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    gap: 30px;
+    align-items: center;
+  }
+  @media (max-width: 620px) { .score-section { grid-template-columns: 1fr; } }
+
+  .gauge-wrap { position: relative; width: 210px; height: 210px; }
+
+  .threat-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1px solid currentColor;
+    margin-bottom: 14px;
+  }
+  .threat-badge::before {
+    content: '';
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: currentColor;
+    box-shadow: 0 0 8px currentColor;
+  }
+
+  .action-text { font-size: 15px; line-height: 1.65; color: var(--text); }
+
+  .components {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 26px;
+  }
+  @media (max-width: 620px) { .components { grid-template-columns: 1fr; } }
+
+  .comp-card {
+    background: var(--panel-2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px;
+  }
+  .comp-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .comp-value { font-family: var(--font-mono); font-size: 22px; font-weight: 700; }
+  .comp-bar { height: 4px; background: var(--border); border-radius: 2px; margin-top: 10px; overflow: hidden; }
+  .comp-bar-fill { height: 100%; border-radius: 2px; transition: width 0.6s ease; }
+
+  .flags-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+  .flag-chip {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    background: rgba(240,69,79,0.1);
+    color: #F5A0A5;
+    border: 1px solid rgba(240,69,79,0.3);
+  }
+  .flag-chip.none { background: rgba(74,222,128,0.1); color: #9BE8B4; border-color: rgba(74,222,128,0.3); }
+
+  .report-box {
+    background: var(--panel-2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-top: 10px;
+    font-size: 13.5px;
+    line-height: 1.75;
+    white-space: pre-wrap;
+    color: var(--text-mid);
+    font-family: var(--font-body);
+    max-height: 340px;
+    overflow-y: auto;
+  }
+
+  /* ---------- History table ---------- */
+  .history-table { width: 100%; border-collapse: collapse; }
+  .history-table th {
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  .history-table td {
+    padding: 12px 10px;
+    font-size: 13px;
+    border-bottom: 1px solid var(--border-soft);
+    color: var(--text-mid);
+  }
+  .history-table tr:last-child td { border-bottom: none; }
+  .history-table .mono { font-family: var(--font-mono); font-size: 12px; }
+  .snippet { color: var(--text); max-width: 320px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+  .pill {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    font-weight: 700;
+    padding: 3px 9px;
+    border-radius: 12px;
+    letter-spacing: 0.3px;
+  }
+
+  .empty-state {
+    text-align: center;
+    padding: 34px 10px;
+    color: var(--text-dim);
+    font-size: 13px;
+  }
+  .empty-state .glyph { font-size: 26px; margin-bottom: 10px; opacity: 0.5; }
+</style>
+</head>
+<body>
+
+<aside class="sidebar">
+  <div class="brand">
+    <div class="brand-mark"></div>
+    <div>
+      <div class="brand-name">SENTINELX</div>
+      <div class="brand-sub">PUBLIC SAFETY INTEL</div>
+    </div>
+  </div>
+  <nav>
+    <a class="nav-item active" data-target="top"><span class="nav-icon">◈</span> Dashboard</a>
+    <a class="nav-item" data-target="submitPanel"><span class="nav-icon">▣</span> Submit for Analysis</a>
+    <a class="nav-item" data-target="historyPanel"><span class="nav-icon">▤</span> Case History</a>
+  </nav>
+  <div class="sidebar-foot">
+    <div class="status-pill">
+      <span class="status-dot" id="engineDot"></span>
+      <span id="engineStatus">Engine status unknown</span>
+    </div>
+  </div>
+</aside>
+
+<main class="main" id="top">
+
+  <div class="topbar">
+    <div>
+      <div class="page-title">Intelligence Dashboard</div>
+      <div class="page-sub">Fusion analysis across scam signal, retrieval evidence and currency verification.</div>
+    </div>
+    <div class="clock" id="clockBox"></div>
+  </div>
+
+  <div class="eyebrow first">Session summary</div>
+  <div class="stat-strip">
+    <div class="stat-card">
+      <div class="stat-label">Cases logged</div>
+      <div class="stat-value" id="statTotal">0</div>
+      <div class="stat-note">this browser, this device</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Critical / High</div>
+      <div class="stat-value" id="statHigh">0</div>
+      <div class="stat-note warn" id="statHighNote">no elevated cases yet</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Avg risk score</div>
+      <div class="stat-value" id="statAvg">—</div>
+      <div class="stat-note">across all logged cases</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Last case</div>
+      <div class="stat-value" id="statLast" style="font-size:16px;">—</div>
+      <div class="stat-note" id="statLastNote">no submissions yet</div>
+    </div>
+  </div>
+
+  <div class="eyebrow" id="submitPanel">Submit for analysis</div>
+  <div class="panel">
+    <textarea id="textInput" placeholder="Paste the suspicious message, call transcript, or description here..."></textarea>
+    <div class="row">
+      <label class="file-btn" for="imageInput">📎 Attach currency note image (optional)</label>
+      <input type="file" id="imageInput" accept="image/*">
+      <span class="filename-tag" id="filenameTag"></span>
+      <button class="submit-btn" id="submitBtn">Analyze</button>
+    </div>
+    <div class="loading" id="loadingIndicator">
+      <div class="spinner"></div>
+      Running scam classifier, retrieval, and threat scoring...
+    </div>
+    <div class="error-box" id="errorBox"></div>
+  </div>
+
+  <div id="results">
+    <div class="eyebrow">Unified assessment</div>
+    <div class="panel">
+      <div class="case-stamp">
+        <span>CASE <b id="caseId">—</b></span>
+        <span id="caseTime">—</span>
+      </div>
+      <div class="score-section">
+        <div class="gauge-wrap">
+          <svg viewBox="0 0 210 210" width="210" height="210">
+            <circle cx="105" cy="105" r="92" fill="none" stroke="#1A202B" stroke-width="1"/>
+            <circle cx="105" cy="105" r="78" fill="none" stroke="#1A202B" stroke-width="1" stroke-dasharray="2 6"/>
+            <circle id="gaugeTrack" cx="105" cy="105" r="86" fill="none" stroke="#1A202B" stroke-width="12"/>
+            <circle id="gaugeArc" cx="105" cy="105" r="86" fill="none" stroke="var(--low)" stroke-width="12"
+              stroke-linecap="round" stroke-dasharray="540.4" stroke-dashoffset="540.4"
+              transform="rotate(-90 105 105)"/>
+            <g id="sweepGroup" style="transform-origin: 105px 105px;">
+              <line x1="105" y1="105" x2="105" y2="19" stroke="var(--signal)" stroke-width="1.5" opacity="0.55"/>
+            </g>
+            <text id="gaugeNumber" x="105" y="100" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="36" font-weight="700" fill="#E7EBF2">0</text>
+            <text x="105" y="123" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9.5" letter-spacing="2" fill="#6E7A8C">RISK / 100</text>
+          </svg>
+        </div>
+        <div>
+          <div class="threat-badge" id="threatBadge">—</div>
+          <div class="action-text" id="actionText">—</div>
+        </div>
+      </div>
+
+      <div class="components" id="componentsGrid"></div>
+
+      <div class="eyebrow" style="margin-top:26px;">Red flags detected</div>
+      <div class="flags-list" id="flagsList"></div>
+    </div>
+
+    <div class="eyebrow">Investigation report</div>
+    <div class="panel">
+      <div class="report-box" id="reportBox"></div>
+    </div>
+  </div>
+
+  <div class="eyebrow" id="historyPanel">Case history</div>
+  <div class="panel">
+    <table class="history-table" id="historyTable">
+      <thead>
+        <tr>
+          <th>Case</th>
+          <th>Time</th>
+          <th>Content</th>
+          <th>Score</th>
+          <th>Threat level</th>
+        </tr>
+      </thead>
+      <tbody id="historyBody"></tbody>
+    </table>
+    <div class="empty-state" id="historyEmpty">
+      <div class="glyph">▤</div>
+      No cases logged yet in this browser.<br>Run your first analysis above and it will show up here.
+    </div>
+  </div>
+
+</main>
+
+<script>
+const API_URL = "http://127.0.0.1:8003/analyze";
+const STORAGE_KEY = "sentinelx_case_history";
+
+const textInput = document.getElementById('textInput');
+const imageInput = document.getElementById('imageInput');
+const filenameTag = document.getElementById('filenameTag');
+const submitBtn = document.getElementById('submitBtn');
+const loadingIndicator = document.getElementById('loadingIndicator');
+const errorBox = document.getElementById('errorBox');
+const results = document.getElementById('results');
+
+const threatColors = {
+  "Low": "var(--low)",
+  "Medium": "var(--medium)",
+  "High": "var(--high)",
+  "Critical": "var(--critical)"
+};
+const threatColorsSolid = {
+  "Low": "#4ADE80", "Medium": "#FFB454", "High": "#FF8A3D", "Critical": "#FF4D5E"
+};
+
+// ---------- sidebar nav smooth-scroll ----------
+document.querySelectorAll('.nav-item').forEach(item => {
+  item.addEventListener('click', () => {
+    document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
+    item.classList.add('active');
+    const target = document.getElementById(item.dataset.target);
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+
+// ---------- clock ----------
+function updateClock() {
+  const now = new Date();
+  const dateStr = now.toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric' });
+  const timeStr = now.toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+  document.getElementById('clockBox').innerHTML = `<strong>${dateStr}</strong><br>${timeStr} IST`;
+}
+updateClock();
+setInterval(updateClock, 1000);
+
+// ---------- engine health check (best-effort) ----------
+async function checkEngine() {
+  const dot = document.getElementById('engineDot');
+  const label = document.getElementById('engineStatus');
+  try {
+    const res = await fetch("http://127.0.0.1:8003/", { method: 'GET' });
+    dot.className = 'status-dot up';
+    label.textContent = 'Central engine reachable (8003)';
+  } catch (e) {
+    dot.className = 'status-dot down';
+    label.textContent = 'Engine offline — start all 4 servers';
+  }
+}
+checkEngine();
+setInterval(checkEngine, 15000);
+
+// ---------- history persistence ----------
+function loadHistory() {
+  try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || []; }
+  catch (e) { return []; }
+}
+function saveHistory(list) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(list.slice(0, 50)));
+}
+function generateCaseId() {
+  const now = new Date();
+  const y = now.getFullYear();
+  const m = String(now.getMonth() + 1).padStart(2, '0');
+  const d = String(now.getDate()).padStart(2, '0');
+  const rand = Math.floor(1000 + Math.random() * 9000);
+  return `SNX-${y}${m}${d}-${rand}`;
+}
+
+function renderStats() {
+  const history = loadHistory();
+  document.getElementById('statTotal').textContent = history.length;
+
+  const elevated = history.filter(h => h.threat_level === 'Critical' || h.threat_level === 'High');
+  document.getElementById('statHigh').textContent = elevated.length;
+  document.getElementById('statHighNote').textContent = elevated.length
+    ? `${((elevated.length / history.length) * 100).toFixed(0)}% of logged cases`
+    : 'no elevated cases yet';
+
+  if (history.length) {
+    const avg = history.reduce((s, h) => s + (h.score || 0), 0) / history.length;
+    document.getElementById('statAvg').textContent = avg.toFixed(1);
+    const last = history[0];
+    document.getElementById('statLast').textContent = last.threat_level;
+    document.getElementById('statLast').style.color = threatColorsSolid[last.threat_level] || 'inherit';
+    document.getElementById('statLastNote').textContent = last.time_label;
+  } else {
+    document.getElementById('statAvg').textContent = '—';
+    document.getElementById('statLast').textContent = '—';
+    document.getElementById('statLastNote').textContent = 'no submissions yet';
+  }
+}
+
+function renderHistoryTable() {
+  const history = loadHistory();
+  const body = document.getElementById('historyBody');
+  const empty = document.getElementById('historyEmpty');
+  body.innerHTML = '';
+  if (!history.length) {
+    empty.style.display = 'block';
+    return;
+  }
+  empty.style.display = 'none';
+  history.forEach(h => {
+    const tr = document.createElement('tr');
+    const color = threatColorsSolid[h.threat_level] || '#8891A3';
+    tr.innerHTML = `
+      <td class="mono">${h.case_id}</td>
+      <td class="mono">${h.time_label}</td>
+      <td class="snippet">${h.snippet}</td>
+      <td class="mono">${h.score}</td>
+      <td><span class="pill" style="background:${color}22; color:${color}; border:1px solid ${color}55;">${h.threat_level}</span></td>
+    `;
+    body.appendChild(tr);
+  });
+}
+
+renderStats();
+renderHistoryTable();
+
+// ---------- submit flow ----------
+imageInput.addEventListener('change', () => {
+  filenameTag.textContent = imageInput.files[0] ? imageInput.files[0].name : "";
+});
+
+submitBtn.addEventListener('click', async () => {
+  const text = textInput.value.trim();
+  if (!text) {
+    showError("Please enter some text to analyze.");
+    return;
+  }
+
+  errorBox.style.display = 'none';
+  results.style.display = 'none';
+  loadingIndicator.style.display = 'flex';
+  submitBtn.disabled = true;
+
+  const formData = new FormData();
+  formData.append('text', text);
+  if (imageInput.files[0]) {
+    formData.append('currency_image', imageInput.files[0]);
+  }
+
+  try {
+    const response = await fetch(API_URL, { method: 'POST', body: formData });
+    if (!response.ok) throw new Error(`Server returned ${response.status}`);
+    const data = await response.json();
+    const caseId = generateCaseId();
+    const now = new Date();
+    renderResults(data, caseId, now);
+    logCase(data, text, caseId, now);
+  } catch (err) {
+    showError("Could not reach the Central Intelligence Engine. Make sure all backend servers are running on their ports (8000, 8001, 8002, 8003). Details: " + err.message);
+  } finally {
+    loadingIndicator.style.display = 'none';
+    submitBtn.disabled = false;
+  }
+});
+
+function showError(msg) {
+  errorBox.textContent = "⚠ " + msg;
+  errorBox.style.display = 'block';
+}
+
+function logCase(data, text, caseId, now) {
+  const history = loadHistory();
+  history.unshift({
+    case_id: caseId,
+    time_label: now.toLocaleString('en-IN', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' }),
+    snippet: text.length > 70 ? text.slice(0, 70) + '…' : text,
+    score: data.unified_risk_score,
+    threat_level: data.threat_level
+  });
+  saveHistory(history);
+  renderStats();
+  renderHistoryTable();
+}
+
+function renderResults(data, caseId, now) {
+  results.style.display = 'block';
+  document.getElementById('caseId').textContent = caseId;
+  document.getElementById('caseTime').textContent = now.toLocaleString('en-IN', { dateStyle: 'medium', timeStyle: 'short' });
+
+  const score = data.unified_risk_score;
+  const color = threatColorsSolid[data.threat_level] || threatColorsSolid['Low'];
+  const arc = document.getElementById('gaugeArc');
+  const circumference = 2 * Math.PI * 86; // r=86
+  const offset = circumference - (circumference * Math.min(score, 100) / 100);
+  arc.style.stroke = color;
+  arc.style.strokeDasharray = circumference;
+  arc.style.strokeDashoffset = offset;
+  document.getElementById('gaugeNumber').textContent = score;
+  document.getElementById('gaugeNumber').setAttribute('fill', color);
+
+  // sweep needle rotation, settles on the score angle
+  const sweep = document.getElementById('sweepGroup');
+  const angle = (Math.min(score, 100) / 100) * 360;
+  sweep.style.transition = 'transform 1.1s cubic-bezier(.2,.8,.3,1)';
+  sweep.style.transform = `rotate(${angle}deg)`;
+
+  const badge = document.getElementById('threatBadge');
+  badge.textContent = data.threat_level + " Threat";
+  badge.style.color = color;
+  document.getElementById('actionText').textContent = data.recommended_action;
+
+  const grid = document.getElementById('componentsGrid');
+  grid.innerHTML = '';
+  const comps = data.component_scores;
+  const compMeta = [
+    { key: 'scam_classifier', label: 'Scam Classifier' },
+    { key: 'investigation_copilot', label: 'Investigation Copilot' },
+    { key: 'currency_detector', label: 'Currency Detector' }
+  ];
+  compMeta.forEach(c => {
+    const val = comps[c.key];
+    const isNum = typeof val === 'number';
+    const card = document.createElement('div');
+    card.className = 'comp-card';
+    card.innerHTML = `
+      <div class="comp-label">${c.label}</div>
+      <div class="comp-value" style="color:${isNum ? color : 'var(--text-dim)'}">${isNum ? val : 'N/A'}</div>
+      <div class="comp-bar"><div class="comp-bar-fill" style="width:${isNum ? val : 0}%; background:${color};"></div></div>
+    `;
+    grid.appendChild(card);
+  });
+
+  const flagsList = document.getElementById('flagsList');
+  flagsList.innerHTML = '';
+  const flags = data.red_flags_detected;
+  const activeFlags = Object.keys(flags).filter(f => flags[f] === 1);
+  if (activeFlags.length === 0) {
+    flagsList.innerHTML = '<span class="flag-chip none">No red flags detected</span>';
+  } else {
+    activeFlags.forEach(f => {
+      const chip = document.createElement('span');
+      chip.className = 'flag-chip';
+      chip.textContent = f;
+      flagsList.appendChild(chip);
+    });
+  }
+
+  document.getElementById('reportBox').textContent = data.investigation_report;
+  results.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+</script>
+</body>
+</html>

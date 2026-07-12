@@ -1,0 +1,26 @@
+cal Guidelines on SOFTWARE BILL OF MATERIALS
+(SBOM):
+https://www.cert-in.org.in/PDF/SBOM_Guidelines.pdf
+Awareness Booklets:
+https://www.cert-in.org.in/AwarenessBooklets.jsp
+Check CERT-In's latest Check CERT-In's latest
+advisories at: vulnerabilities notes at:
+https://www.cert- https://www.cert-
+in.org.in/s2cMainServlet? in.org.in/s2cMainServle
+pageid=PUBADVLIST t?pageid=VLNLIST
+csk@cert-in.org.in
+Announcements Security Tools
+https://www.csk.gov.in/announcements/index.html https://www.csk.gov.in/security-tools.html
+18
+CERT-In’s Digital Safety
+Compass Handbook
+FOR REPORTING CYBER FOR QUERIES RELATED TO
+SECURITY INCIDENTS TO 24/7 BOTNET CLEANING
+INCIDENT RESPONSE HELP INITIATIVE
+DESK
+csk@cert-in.org.in
+incident@cert-in.org.in
+CERT-IN FOR INDUSTRY &
+INFORMATION DESK ACADEMIA
+COLLABORATION
+info

@@ -1,0 +1,11 @@
+o-factor authentication: Authentication methodologies involve three basic ‘factors’-
+something the user knows (e.g., password, PIN- either static or one time generated);
+something the user has (e.g., ATM/ smart card number, expiry date and CVV that is printed
+on the card); and something the user is (e.g., biometric characteristic, such as a fingerprint).
+Two-factor authentication (also known as 2FA) provides identification of users by means of
+a combination of two different components - what the user has and what the user knows/is
+to complete a transaction.
+➢ Authorisation: The response from a card-issuing bank to a merchant’s transaction
+authorisation request indicating that the payment information is valid and funds are
+available on the customer’s credit card.
+➢ Card number: The number a

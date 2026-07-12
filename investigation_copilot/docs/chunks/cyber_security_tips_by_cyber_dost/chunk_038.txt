@@ -1,0 +1,16 @@
+anned for virus/ worms
+using an updated antivirus software.
+30
+Cyber Dost – Awareness Document
+6.17. If you see a pop-up message while using internet, never click on any
+buttons present on the pop-up (not even the close button), they might
+contain malware. On Windows System, press ALT + F4 (Command-W on
+Mac Systems) on your keyboard to close the dialog box.
+Source: www.infosecawareness.in
+6.18. Never download any content like Images, Videos, Apps, Games, System
+Software, Software Drivers, Operating Systems etc. from unknown
+sources. They might contain malware.
+6.19. Beware of the sites that offer free antivirus or anti-spyware software.
+These may spread malicious content in your device. Always download
+antivirus and spyware software from trusted sites only.
+6.20.

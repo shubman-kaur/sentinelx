@@ -1,0 +1,17 @@
+including anti-virus software are up to date; and auto updates are
+turned on in your computer.
+6.10. Do not give remote access, file and print sharing access to untrusted
+computers.
+29
+Cyber Dost – Awareness Document
+6.11. Be extra cautious like opening a downloaded file with extensions like
+'.exe', '.vbs' and '.scr'; Enable the 'Show file extensions' options in the
+Windows settings on your computer to identify these.
+Source: www.infosecawareness.in
+6.12. Never share malicious or infected USB thumb drives with unknown
+people. Scan all the USB drives with anti-virus each time before
+exploring.
+6.13. Always keep your personal computer/ laptop and devices secured. One
+of the ways to ensure standard safety is to install good antivirus and to
+update it regularly.
+6.14.

@@ -1,0 +1,12 @@
+Also, check and ensure the safety of other banking
+channels such as Net banking, Mobile banking etc., to prevent perpetuation of the
+fraud once the debit/ credit cards, etc., are blocked following a fraud.
+➢ Dial helpline number 155260 or 1930 or report the incident on National Cybercrime
+Reporting Portal (www.cybercrime.gov.in).
+Reset Mobile: Use (Setting-Reset-Factory Data) to reset mobile if a fraud has occurred
+due to a data leak from mobile.
+Precautions related to Debit / Credit cards
+➢ You should deactivate various features of credit / debit card, viz., online transactions
+both for domestic and international transactions, in case you are not going to use the
+card for a while and activate the same only when the card usage is required.
+➢ Similarly, Near Field Communication (NFC) featu

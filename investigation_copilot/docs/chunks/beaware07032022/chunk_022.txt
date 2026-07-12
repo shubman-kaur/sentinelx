@@ -1,0 +1,21 @@
+SIM swap / SIM cloning
+Modus Operandi
+➢ Fraudsters gain access to the customer’s Subscriber Identity Module (SIM) card or
+may obtain a duplicate SIM card
+(including electronic-SIM) for the
+registered mobile number connected to
+the customer’s bank account.
+➢ Fraudsters use the OTP received on
+such duplicate SIM to carry out
+unauthorised transactions.
+➢ Fraudsters generally collect the
+personal / identity details from the
+customer by posing as a telephone /
+mobile network staff and request the
+customer details in the name of offers
+such as - to provide free upgrade of
+SIM card from 3G to 4G or to provide
+additional benefits on the SIM card.
+Precautions
+➢ Never share identity credentials pertaining to your SIM card.
+➢ Be watchful regarding mobile network access in your phone.

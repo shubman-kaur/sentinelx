@@ -1,0 +1,10 @@
+be stolen.
+Similarly, if the password is stolen, then the money in the bank accounts will be stolen. Hence,
+protection of bank accounts with strong passwords becomes highly essential.
+Let us look at some examples of online banking fraud.
+Digital Payments Applications related attacks
+Digital payments have become very common in today’s life. However, they do pose a threat if the
+account is hacked.
+Hacking of Bank Account due to Weak Password
+In this type of attack, the attacker hacks into the victim’s account by using a program to guess
+commonly used passwords.

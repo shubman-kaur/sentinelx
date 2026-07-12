@@ -1,0 +1,11 @@
+u know, particularly when attachments are compressed files or ZIP
+files.
+11.2 Do not pay the ransom. Even if the ransom is paid, there is no
+guarantee that you will be able to regain access to your files.
+Source: www.infosecawareness.in
+11.3 Lookout for the latest scams! Currently, “ransomware” is on the rise.
+Make sure you do not click or download links from unknown sources.
+Hackers can steal your credentials and encrypt your data and demand
+ransom to decrypt it
+11.4 Ensure your applications and operating systems (OSs) have been
+updated with the latest patches.

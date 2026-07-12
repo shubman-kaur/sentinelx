@@ -1,0 +1,22 @@
+These notifications will quickly alert you on any transaction and
+the unsuccessful login attempts to your net-banking account.
+• Always review transaction alert received on your registered mobile number and
+reconcile with the amount of your purchase.
+• Always keep a maximum transaction limit for your bank account.
+• Secure your applications with strong password and 2-step verification
+(such as OTP), even for transactions below your maximum transaction limit.
+• Uninstall any compromised/malicious application immediately.
+41
+SPIT
+John losses all the
+money in his account.
+However, Sahil losses
+only ` 5,000 from his
+account.
+Sahil later explains John
+that he had only kept
+` 5000 as his maximum
+transaction limit in his
+bank account as well
+as digital payment
+application.

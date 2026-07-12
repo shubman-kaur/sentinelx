@@ -1,0 +1,13 @@
+ill be sending money instead of receiving it.
+5
+Office of RBI Ombudsman
+https://cms.rbi.org.in/
+4
+4. Frauds due to the use of unknown / unverified mobile apps
+Modus Operandi
+➢ Fraudsters circulate through SMS / email / social media / Instant Messenger, etc.,
+certain app links, masked to appear similar to the existing apps of authorised entities.
+➢ Fraudsters trick the customer to click on such links which results in downloading of
+unknown / unverified apps on the customer’s mobile / laptop / desktop, etc.,
+➢ Once the malicious application is downloaded, the fraudster gains complete access to
+the customer’s device.

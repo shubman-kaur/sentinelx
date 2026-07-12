@@ -1,0 +1,2 @@
+ord, card number, CVV number, OTP etc. with any
+stranger, even if he/she claims to be bank employee.

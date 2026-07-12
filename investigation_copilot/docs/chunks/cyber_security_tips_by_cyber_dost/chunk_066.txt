@@ -1,0 +1,9 @@
+11.4 Ensure your applications and operating systems (OSs) have been
+updated with the latest patches. Vulnerable applications and OSs are
+the target of most ransomware attacks.
+11.5 Always perform regular backups on important data and keep the
+backup copies disconnected from the computer
+---------------------------------------END-----------------------------------------
+44
+Cyber Dost – Awareness Document
+45

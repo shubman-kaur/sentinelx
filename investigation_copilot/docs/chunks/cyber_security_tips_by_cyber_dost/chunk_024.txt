@@ -1,0 +1,14 @@
+ol + Shift + Power.
+4.1.12. Use several combinations of characters while creating a strong
+password. For example, create a password containing a combination
+of uppercase, lowercase, numbers and special characters.
+4.2 Account security
+4.2.1. Use ‘non-administrator account’ privileges for login to the computer
+and avoid accessing with ‘administrator’ privileges for day-to-day
+usage of computers.
+4.2.2. Enable security features on all digital devices you use! Ensure that
+the devices offer security features like passwords to open/get
+access. Make it a habit to update/change passwords regularly.
+4.2.3. Thinking of selling your old electronic gadgets such as mobile, tab,
+laptop etc.? Do ensure that all the device data is securely erased
+before your handover it to vendor.

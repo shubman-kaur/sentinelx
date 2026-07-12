@@ -1,0 +1,13 @@
+g.in
+4. Refer to the latest advisories which are issued by CERT-IN on https://www.cert-in.org.in/
+5. Report any adverse activity or unwanted behavior to CERT-IN using following channels
+E-mail : incident@cert-in.org.in
+Helpdesk : +91 1800 11 4949
+Provide following information (as much as possible) while reporting an incident.
+• Time of occurrence of the incident
+• Information regarding affected system/network
+• Symptoms observed
+6. To report lost or stolen mobile phones, file a First Information Report (FIR) with the police.
+Post filing the FIR, inform Department of Telecommunications (DoT) through the helpline
+number 14422 or file an online compliant on Central Equipment Identity Register
+(CEIR) portal by visiting https://ceir.gov.in.

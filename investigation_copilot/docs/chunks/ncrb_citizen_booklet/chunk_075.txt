@@ -1,0 +1,25 @@
+The Inspector
+investigates the case and
+finds out Ramesh was
+the culprit.
+Ramesh confesses to
+his crime and says he
+heard Reena give up the
+password.
+Reena regrets that she
+kept a weak password
+and shared it openly with
+her friend Seema.
+Techniques for strong password which are easy to remember:
+• For making unique passwords, create as many pass-phrases and words as possible
+(different passwords for different accounts) For example:
+• shopping – $h0pp!n9 (S =$, i=!, g=9, o=0)
+• october – 0cT0b3r9!
+(one more alphabet/number ‘9’ is added as “october” is a 7 letter word)
+• Social Network – $0c!alNetw0rK
+• Windows – w!nD0W$9
+• NULinux – 9NuL!NuX
+(one more alphabet/number ‘9’ is added as “NULinux” is a 7 letter word)
+ONLINE BANKING
+FRAUDS
+Story 3: Hacking of Multiple Accounts due to same passwo

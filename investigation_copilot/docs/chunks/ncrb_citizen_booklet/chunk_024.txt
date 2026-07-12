@@ -1,0 +1,11 @@
+formation.
+Smishing is the SMS equivalent of phishing. It uses SMS to send fraudulent text messages. The
+SMS asks the recipient to visit a website/weblink or call a phone number. The victim is then tricked
+into providing sensitive personal information, debit/credit card details or passwords etc.
+Phishing, Vishing and Smishing are done in an attempt to steal money from the victim or cause any
+other harm to the victim.
+Let us look at some examples of psychological tricks.
+Lottery Fraud
+The fraudster congratulates the victim for winning a handsome lottery via e-mail/call/SMS. The
+victim is delighted and is eager to get the lottery money. The fraudster asks the victim to transfer a
+token amount and share vital personal information to get the lottery money.

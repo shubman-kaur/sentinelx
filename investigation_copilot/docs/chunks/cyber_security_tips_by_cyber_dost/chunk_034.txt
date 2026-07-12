@@ -1,0 +1,20 @@
+Fi for sensitive
+browsing as your data can be stolen or copied
+27
+Cyber Dost – Awareness Document
+6. Virus, Worms and Trojans
+6.1. Do not use public computer/ cybercafé to access social networking
+websites, it may be infected/ installed with a key logger application to
+capture your keystrokes including the login credentials.
+Source: www.infosecawareness.in
+6.2. Be careful of what you plug in to your computer. Malware can spread
+through infected USB drives, external hard drives, and even smart
+phones.
+6.3. Computers should be protected from virus/worms using an Antivirus
+software.
+Source: www.infosecawareness.in
+28
+Cyber Dost – Awareness Document
+6.4. Ensure that your computer and mobile devices have updated antivirus
+software and always keep it turned on.
+6.5.

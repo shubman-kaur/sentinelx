@@ -1,0 +1,15 @@
+ftware should be used to delete sensitive files on computers.
+Source: www.infosecawareness.in
+4.1.9. Always lock your computer before leaving workplace to prevent
+unauthorized access. A user can lock computer by pressing ‘ctrl
++alt+del’ and choosing ‘lock this computer’ or “window button+ L”.
+22
+Cyber Dost – Awareness Document
+4.1.10. Enable a password-protected screen saver with a timeout period of 5
+minutes or less to ensure that computers that were left unsecured
+will be protected.
+4.1.11. Always lock your computer screen, when not in use. To lock your
+Windows system, press Windows Button + ‘L’ and to lock Mac system,
+press Shift + Ctrl + Eject or Control + Shift + Power.
+4.1.12. Use several combinations of characters while creating a strong
+password.

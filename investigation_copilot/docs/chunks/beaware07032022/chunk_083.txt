@@ -1,0 +1,10 @@
+money from one bank
+/ wallet account to other using a mobile phone which has access to the Internet. Once a
+customer registers for UPI with the bank, a unique virtual identifier is created and mapped
+to the customer’s mobile phone to initiate the payment. It uses authentication in the form
+of UPI-PIN, which is CONFIDENTIAL and should not be shared with anyone.
+➢ Vishing: It refers to phone calls pretending to be from bank / non-bank e-wallet providers
+/ telecom service providers luring customers into sharing confidential details in the pretext
+of KYC-updation, unblocking of account / SIM-card, crediting debited amount, etc.
+➢ Wallet: A wallet is like an account which can be used for purchase of goods and services
+against the stored value in it. A wallet can be virtual (e.g.

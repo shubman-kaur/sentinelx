@@ -1,0 +1,6 @@
+Expiry date: The date on which the validity of a card, contract, agreement, document, etc.
+expires. Transactions will be approved only in respect of cards or documents which have
+not yet expired.
+➢ Gateway: It is an intermediary that provides technology infrastructure to route and facilitate
+processing of services such as transactions base management, risk management, etc.
+without its involvement directly.

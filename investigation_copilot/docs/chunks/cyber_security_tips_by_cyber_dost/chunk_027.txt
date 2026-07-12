@@ -1,0 +1,15 @@
+ation channels. One for the document and
+other for the credentials/password to open the file.
+4.2.9. If your work requires you to communicate passwords, such as while
+sending password for an encrypted file sent as an attachment
+through email, it must be communicated through a different
+channel such as over a phone call or SMS.
+24
+Cyber Dost – Awareness Document
+4.2.10. Be aware while using public charging points.
+4.2.11. Still using default passwords? Avoid using passwords such as
+Jan@2018, admin@123, password@123 etc. These can be easily
+guessed by nefarious users.
+4.2.12. While registering/ creating an online account do not select common
+secret questions (for password recovery option) that can be guessed
+easily.

@@ -1,0 +1,24 @@
+As
+part of services of CERT-In, for the creation of awareness in
+the area of cybersecurity as well as training/upgrading the
+technical know-how of various stakeholders, CERT-In is
+observing the Safer Internet Day on 11th February, 2025.
+This Digital Safety Compass Handbook for Digital Nagriks
+and Digital Enterprises is released as a part of CERT-In's
+awareness initiatives to educate the users on the best
+practices that need to be followed for using the internet in a
+safe and secure manner.
+Enhancing
+Cyber Security
+in India
+03
+CERT-In’s Digital Safety
+Compass Handbook
+PHISHING
+WEBSITE SCAMS
+Scammers create fake websites and steal personal information such
+as banking details, card details, personal information.
+How Attacks Work
+Scammer sends Email arrives in
+Victim click on
+fake email.

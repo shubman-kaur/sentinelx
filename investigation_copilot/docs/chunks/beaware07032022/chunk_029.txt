@@ -1,0 +1,16 @@
+ential information on social media platforms.
+12
+Office of RBI Ombudsman
+https://cms.rbi.org.in/
+11. Juice jacking
+Modus Operandi
+➢ The charging port of a mobile, can also be used to transfer files / data.
+➢ Fraudsters use public charging ports to transfer malware to customer phones connected
+there and take control / access / steal data sensitive data such as emails, SMS, saved
+passwords, etc. from the customers’ mobile phones (Juice Jacking).
+Precaution
+➢ Avoid using public / unknown charging ports / cables.
+13
+Office of RBI Ombudsman
+https://cms.rbi.org.in/
+12.

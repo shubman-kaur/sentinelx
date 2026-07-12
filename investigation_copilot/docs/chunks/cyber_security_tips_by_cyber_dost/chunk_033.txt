@@ -1,0 +1,16 @@
+ir wireless network to accept
+connections only from devices with MAC addresses recognized by
+router. To prevent unauthorized access to your device, consider
+activating your wireless router's MAC address filter to allow your
+devices only.
+5.5. Thinking to offer internet via hotspot to your friend? Do ensure your
+device access is protected via a strong password and your hotspot is
+closed immediately after usage. Open hotspots can lead anyone to
+connect to your device and may steal your personal data.
+5.6. Always browse shopping or banking websites or apps only on a device
+that belongs to you or on a network that you trust. Avoid using a
+friend’s phone, a public computer, or a cafe’s free Wi-Fi for sensitive
+browsing as your data can be stolen or copied
+27
+Cyber Dost – Awareness Document
+6.

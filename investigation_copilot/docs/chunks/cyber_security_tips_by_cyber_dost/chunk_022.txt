@@ -1,0 +1,14 @@
+ost – Awareness Document
+4.1.6. Enable mobile device access to third-party applications selectively. Do
+you know some malicious apps, if given SMS access, may read OTP
+and other sensitive information from your messages.
+Source: www.infosecawareness.in
+4.1.7. Passwords should not be stored in readable form in computers,
+notebook, notice board or in any other location where unauthorized
+persons might discover or use them.
+4.1.8. Remove files or data you no longer need to prevent unauthorized
+access to such data. Merely deleting sensitive material is not sufficient,
+as it does not actually remove the data from your system. File shredder
+software should be used to delete sensitive files on computers.
+Source: www.infosecawareness.in
+4.1.9.

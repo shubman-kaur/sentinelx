@@ -1,0 +1,8 @@
+proofs of the victim. These can be PAN Card,
+Aadhaar Card or any other identity proof of the victim. The attacker can use these photo copies to
+steal money or cause harm to the victim.
+Credit/Debit Card Skimming
+Credit/Debit card skimming is done using a small device called skimmer. The magnetic stripe of the
+card stores details such as name, credit/debit card number and expiration date. First, the credit/
+debit card is swiped through a skimmer. Then, the skimmer captures all these details. Thieves use
+this stolen data to make online transactions.

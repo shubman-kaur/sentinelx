@@ -1,0 +1,8 @@
+rvices such as transactions base management, risk management, etc.
+without its involvement directly. Payment Gateways are entities that provide technology
+infrastructure to route and facilitate processing of online payment transactions without any
+involvement in handling of funds.
+➢ Immediate payment services (IMPS): It is an instant interbank electronic fund transfer
+service (up to a limit) through mobile phones, provided by National Payments Corporation
+of India (NPCI).
+➢ KYC: Stands for Know Your Customer.

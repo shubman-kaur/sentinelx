@@ -1,0 +1,12 @@
+line compliant on Central Equipment Identity Register
+(CEIR) portal by visiting https://ceir.gov.in. After verification, DoT will blacklist the
+phone, blocking it from further use. In addition to this, if anyone tries to use the device
+using a different SIM card, the service provider will identify the new user and inform
+the police.
+57
+NOTES
+58
+Disclaimer
+This booklet is designed solely to provide helpful information and general guidance on the themes
+discussed and should not be used as a substitute for any legal or professional advice. The names,
+characters, entities, places and incidents have been used entirely in a fictitious manner.
